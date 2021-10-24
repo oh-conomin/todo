@@ -1,20 +1,13 @@
 const btn=document.getElementById('submit');
-
+const t1=document.getElementById('t1');
+const memo=document.getElementById('text')
 
 btn.addEventListener('click',function(event){
-    
- const memo =document.getElementById('text').value;
-document.getElementById('t1').textContent=memo;
+    event.preventDefault();
+    const li =document.createElement('li'); 
+    li.textContent=text.value;
+    t1.appendChild(li);
+    text.value="";
 
 });
-
-
-
-
-
-
-const li =document.createElement('li');
-t1.appendChild(li);
-
-console.log('はい');
 
