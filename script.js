@@ -14,3 +14,5 @@ document.getElementById('t1').textContent=memo;
 
 const li =document.createElement('li');
 t1.appendChild(li);
+
+console.log('はい');
