@@ -7,8 +7,13 @@ btn.addEventListener('click',function(event){
     event.preventDefault();
     const li =document.createElement('li'); 
     li.textContent=text.value; 
-    li.innerHTML='<input type="button" id="libtn" value="ok">'; 
-    t1.appendChild(li)
+    
+    function addChild(btn){
+        child.innerHtml='<input type="button" id="libtn" value="ok">'
+    };
+   
+        t1.appendChild(li)
+        t1.appendChild(btn)
     text.value="";
 });
 
