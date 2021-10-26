@@ -6,14 +6,16 @@ const memo=document.getElementById('text');
 btn.addEventListener('click',function(event){
     event.preventDefault();
     const li =document.createElement('li'); 
+    const okBtn = document.createElement('button');
     li.textContent=text.value; 
-    
-    function addChild(btn){
-        child.innerHtml='<input type="button" id="libtn" value="ok">'
-    };
+    okBtn.innerText="ok";
+
    
-        t1.appendChild(li)
-        t1.appendChild(btn)
+    t1.appendChild(li);
+   t1.appendChild(okBtn);
     text.value="";
 });
 
+okBtn.addEventListener('click',function(){
+    remove();
+})
