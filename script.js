@@ -7,15 +7,20 @@ btn.addEventListener('click',function(event){
     event.preventDefault();
     const li =document.createElement('li'); 
     const okBtn = document.createElement('button');
-    li.textContent=text.value; 
     okBtn.innerText="ok";
+    
+    li.textContent=text.value; 
 
-   
+    
     t1.appendChild(li);
-   t1.appendChild(okBtn);
+   li.appendChild(okBtn);
     text.value="";
+ 
+
 });
 
-okBtn.addEventListener('click',function(){
-    remove();
-})
+okBtn.addEventListener('click',function(event){
+    event.preventDefault();   
+    removeNode();
+    });
+

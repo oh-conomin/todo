@@ -22,3 +22,7 @@ ul{
     height: 20px;
     width: 600px;
 }
+
+#li button{
+    margin: 10px;
+}
