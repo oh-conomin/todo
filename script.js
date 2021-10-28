@@ -1,26 +1,44 @@
 const btn=document.getElementById('submit');
 const t1=document.getElementById('t1');
-const memo=document.getElementById('text');
 
 
 btn.addEventListener('click',function(event){
-    event.preventDefault();
+ 
+  event.preventDefault();
+  const memo=document.getElementById('text').value;
+  const memotwo=document.getElementById('texttwo').value;
+
+  if(memo.length> 0 && memotwo.length>0){ 
     const li =document.createElement('li'); 
-    const okBtn = document.createElement('button');
+    const okBtn=document.createElement('button');
     okBtn.innerText="ok";
     
-    li.textContent=text.value; 
+  
+    li.textContent=memo + "    " +memotwo+  "  "; 
+     
+    
+
+   
+
+
+
+  
+t1.appendChild(li);
+li.appendChild(okBtn);
 
     
-    t1.appendChild(li);
-   li.appendChild(okBtn);
-    text.value="";
- 
+text.value="";
+//memo.value=""; 
+//memotwo.value=""; 
 
-});
+
 
 okBtn.addEventListener('click',function(event){
-    event.preventDefault();   
-    removeNode();
-    });
+        event.preventDefault();   
+        li.remove();
+        });
+      }    
+      
+});
+
 
