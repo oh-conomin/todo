@@ -1,24 +1,27 @@
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
 
-.list{
-    margin:auto;
-    background-color: lightskyblue;
-    display: block;
-    height: 400px;
-    width: 700px;
-    border-radius: 10px;
+.list {
+  margin: auto;
+  background-color: lightskyblue;
+  display: block;
+  height: 400px;
+  width: 700px;
+  border-radius: 10px;
+}
+.todo {
+  text-align: center;
+}
+.memo {
+  border: rgb(93, 90, 230) solid 2px;
+  border-radius: 0.7em;
+  padding: 2px;
+  margin: 10px;
+  height: 20px;
+  width: 600px;
+}
 
-}
-.todo{
-    text-align: center;
-}
-.memo{
-    border:rgb(93, 90, 230) solid 2px;
-    border-radius: 0.7em;
-    padding: 2px;
-    margin-right: 20px;
-    height: 20px;
-    width: 600px;
+#li button {
+  margin: 10px;
 }
